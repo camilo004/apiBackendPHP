@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "d371d7db-cf86-42d0-a01a-ee0e6718cb54",
+		"name": "ApiBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25799631-d371d7db-cf86-42d0-a01a-ee0e6718cb54"
+	},
+	"item": [
+		{
+			"name": "Asignar rol",
+			"id": "27e2cb84-dbe9-4289-a77b-222206739e7b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/2/rol/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"2",
+						"rol",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar usuario",
+			"id": "96808c44-271f-41b0-86e2-f0d039212774",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nombre\": \"camilo\", \"apellido\": \"mejia\", \"edad\": \"20\", \"foto\": \"siuuu\", \"tipo_documento\": \"Cc\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/agregar/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"agregar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontrar usuario",
+			"id": "67ed98cb-2f91-421d-a370-f745ae0ae7fd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/ver/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"ver",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver todos los usuarios",
+			"id": "bafaaa99-969d-447a-b37f-1363b87b8e3e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/findall",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"findall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar rol",
+			"id": "f11867f8-36ec-44ad-a04a-75fc98739436",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nombre\": \"vendedor\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/roles/agregar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roles",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar usuario",
+			"id": "39b70a07-f0f0-44e4-a386-131c6d492d5e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nombre\": \"juan\", \"apellido\": \"mejia\", \"edad\": \"20\", \"foto\": \"siuuu\", \"tipo_documento\": \"Cc\"\r\n,\"role_id\": \"2\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/actualizar/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"actualizar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar usuario",
+			"id": "dd7138bb-7969-4dc7-a75c-f69c67b0d4c6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/eliminar/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
